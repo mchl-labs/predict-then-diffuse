@@ -1,0 +1,18 @@
+[project]
+name = "predict-then-diffuse-paper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "catboost>=1.2.10",
+    "datasets[s3]>=4.8.4",
+    "fsspec==2023.9.2",
+    "langdetect>=1.0.9",
+    "matplotlib>=3.10.8",
+    "optuna>=4.8.0",
+    "pandas>=3.0.2",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "tqdm>=4.67.3",
+]
