@@ -1,4 +1,4 @@
-# Predict-Then-Diffuse
+# Predict-then-Diffuse
 
 
 ## Abstract
