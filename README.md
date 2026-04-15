@@ -1,5 +1,22 @@
-# Predict-then-Diffuse
+<div align="center">
 
+<h1>🏆 IJCNN 2026</h1>
+
+<h1>Predict-then-Diffuse: Adaptive Response Length
+<br>for Compute-Budgeted Inference in Diffusion LLMs</h1>
+
+<div>
+    <a href="" target="_blank">Michael Rottoli</a> | 
+    <a href="" target="_blank">Subhankar Roy</a> | 
+    <a href="" target="_blank">Stefano Paraboschi</a>
+</div>
+<br>
+<div>
+    Università degli Studi di Bergamo, Italy
+</div>
+<br>
+
+</div>
 
 ## Abstract
 
