@@ -6,9 +6,9 @@
 <br>for Compute-Budgeted Inference in Diffusion LLMs</h1>
 
 <div>
-    <a href="" target="_blank">Michael Rottoli</a> | 
-    <a href="" target="_blank">Subhankar Roy</a> | 
-    <a href="" target="_blank">Stefano Paraboschi</a>
+    <a href="https://mchl-labs.wearegala.studio/" target="_blank">Michael Rottoli</a> | 
+    <a href="https://www.linkedin.com/in/mainak-singha-540319201/" target="_blank">Subhankar Roy</a> | 
+    <a href="https://cs.unibg.it/parabosc/" target="_blank">Stefano Paraboschi</a>
 </div>
 <br>
 <div>
