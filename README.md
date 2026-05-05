@@ -1,11 +1,27 @@
-# Predict-Then-Diffuse
+<div align="center">
 
+<h1>🏆 IJCNN 2026</h1>
+
+<h1>Predict-then-Diffuse: Adaptive Response Length
+<br>for Compute-Budgeted Inference in Diffusion LLMs</h1>
+
+<div>
+    <a href="https://mchl-labs.wearegala.studio/" target="_blank">Michael Rottoli</a> | 
+    <a href="https://www.linkedin.com/in/mainak-singha-540319201/" target="_blank">Subhankar Roy</a> | 
+    <a href="https://cs.unibg.it/parabosc/" target="_blank">Stefano Paraboschi</a>
+</div>
+<br>
+<div>
+    Università degli Studi di Bergamo, Italy
+</div>
+<br>
+</div>
+
+![Paper Figure](figures/paper_figure.png)
 
 ## Abstract
 
-Diffusion-based Large Language Models (D-LLMs) represent a promising frontier in generative AI, offering fully parallel token generation that can lead to significant throughput advantages and superior GPU utilization over the traditional autoregressive paradigm. However, this parallelism is constrained by the requirement of a fixed-size response length prior to generation. This architectural limitation imposes a severe trade-off: oversized response length results in computational waste on semantically meaningless padding tokens, while undersized response length cause output truncation requiring costly re-computations that introduce unpredictable latency spikes. To tackle this issue, we propose Predict-Then-Diffuse, a simple and model-agnostic framework that enables compute-budgeted inference per input query by first estimating the response length and then using it to run inference with D-LLM. At its core lies an Adaptive Response Length Predictor (AdaRLP), which estimates the optimal response length given an input query. As a measure against under-estimating the response length and re-running inference with a higher value, we introduce a data-driven safety mechanism based on a small increase of the predicted length. As a whole, our framework avoids that computation is wasted on padding tokens, at the same time preserving output quality. Experimental validation on multiple datasets demonstrates that Predict-Then-Diffuse reduces computational costs (FLOP) significantly compared to the default D-LLM inference mechanism, while being robust to skewed data distributions.
-
-![Paper Figure](figures/paper_figure.png)
+Diffusion-based Large Language Models (D-LLMs) represent a promising frontier in generative AI, offering fully parallel token generation that can lead to significant throughput advantages and superior GPU utilization over the traditional autoregressive paradigm. However, this parallelism is constrained by the requirement of a fixed-size response length prior to generation. This architectural limitation imposes a severe trade-off: oversized response length results in computational waste on semantically meaningless padding tokens, while undersized response length cause output truncation requiring costly re-computations that introduce unpredictable latency spikes. To tackle this issue, we propose Predict-Then-Diffuse, a simple and model-agnostic framework that enables compute-budgeted inference per input query by first estimating the response length and then using it to run inference with D-LLM. At its core lies an Adaptive Response Length Predictor (AdaRLP), which estimates the optimal response length given an input query. As a measure against under-estimating the response length and re-running inference with a higher value, we introduce a data-driven safety mechanism based on a small increase of the predicted length. As a whole, our framework avoids that computation is wasted on padding tokens, at the same time preserving output quality. Experimental validation on multiple datasets demonstrates that Predict-Then-Diffuse significantly reduces computational costs (FLOP) compared to the default D-LLM inference mechanism, while being robust to skewed data distributions.
 
 ## Overview
 
@@ -73,8 +89,8 @@ Open `ptd_empirical_profiling_comparison.ipynb` and run cells top-to-bottom.
 The final profiling sections compare multiple input policies:
 
 - Experiment A: `predicted_lengths.csv` (baseline)
-- Experiment B: `predicted_lengths_fallback.csv` (legacy fallback variant, if present)
-- Experiment C: `predicted_lengths_fixed.csv` (current fixed length variant)
+- Experiment B: `predicted_lengths_fallback.csv` (baseline + fallback)
+- Experiment C: `predicted_lengths_fixed.csv` (fixed length)
 
 
 ## Notes
