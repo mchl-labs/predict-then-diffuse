@@ -89,8 +89,8 @@ Open `ptd_empirical_profiling_comparison.ipynb` and run cells top-to-bottom.
 The final profiling sections compare multiple input policies:
 
 - Experiment A: `predicted_lengths.csv` (baseline)
-- Experiment B: `predicted_lengths_fallback.csv` (legacy fallback variant, if present)
-- Experiment C: `predicted_lengths_fixed.csv` (current fixed length variant)
+- Experiment B: `predicted_lengths_fallback.csv` (baseline + fallback)
+- Experiment C: `predicted_lengths_fixed.csv` (fixed length)
 
 
 ## Notes
