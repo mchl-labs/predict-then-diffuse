@@ -83,6 +83,7 @@ This notebook is the best place to:
 - generate or validate length prediction artifacts
 
 ## 2) Empirical Profiling
+NOTE: GPU required - suggested minimum 40GB VRAM
 
 Open `ptd_empirical_profiling_comparison.ipynb` and run cells top-to-bottom.
 
