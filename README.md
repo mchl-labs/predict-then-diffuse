@@ -93,6 +93,21 @@ The final profiling sections compare multiple input policies:
 - Experiment B: `predicted_lengths_fallback.csv` (baseline + fallback)
 - Experiment C: `predicted_lengths_fixed.csv` (fixed length)
 
+## 📎 Citation 
+
+If you find our work helpful, please consider giving a star ⭐ and citation 📝 
+```bibtex
+@misc{rottoli2026predictthendiffuseadaptiveresponselength,
+      title={Predict-then-Diffuse: Adaptive Response Length for Compute-Budgeted Inference in Diffusion LLMs}, 
+      author={Michael Rottoli and Subhankar Roy and Stefano Paraboschi},
+      year={2026},
+      eprint={2605.04215},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2605.04215}, 
+}
+```
+
 
 ## Notes
 
