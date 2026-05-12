@@ -1,7 +1,5 @@
 <div align="center">
 
-<h1>🏆 IJCNN 2026</h1>
-
 <h1>Predict-then-Diffuse: Adaptive Response Length
 <br>for Compute-Budgeted Inference in Diffusion LLMs</h1>
 
@@ -93,6 +91,12 @@ The final profiling sections compare multiple input policies:
 - Experiment B: `predicted_lengths_fallback.csv` (baseline + fallback)
 - Experiment C: `predicted_lengths_fixed.csv` (fixed length)
 
+## Notes
+
+- Notebook output can depend on GPU memory and driver/toolkit versions.
+- If a CSV file is reported missing, run the analytical notebook first or place the required file under `data/`.
+- If the model download is slow/fails, rerun after network/auth checks for your Hugging Face environment.
+
 ## 📎 Citation 
 
 If you find our work helpful, please consider giving a star ⭐ and citation 📝 
@@ -107,10 +111,3 @@ If you find our work helpful, please consider giving a star ⭐ and citation �
       url={https://arxiv.org/abs/2605.04215}, 
 }
 ```
-
-
-## Notes
-
-- Notebook output can depend on GPU memory and driver/toolkit versions.
-- If a CSV file is reported missing, run the analytical notebook first or place the required file under `data/`.
-- If the model download is slow/fails, rerun after network/auth checks for your Hugging Face environment.
